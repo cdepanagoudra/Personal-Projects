@@ -7,11 +7,11 @@ public class user {
 	private String password;
 	
 	public user() {
-		super();
+		
 	}
 
 	public user(int id, String name, String email, String password) {
-		super();
+		
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -49,6 +49,12 @@ public class user {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@Override
+	public String toString() {
+		return "user [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + "]";
+	}
+	
 	
 	
 }
